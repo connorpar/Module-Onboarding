@@ -22,14 +22,34 @@ As well as useful links to learn more */
   --font: 100%/1.5 system-ui;
   --space: clamp(6px, 6px + 2vw, 15px);
   --line: 1px solid;
+  --line2: 5px solid;
   --container: 1280px;
 }
+
+
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
 body {
   background: var(--paper);
   color: var(--ink);
   font: var(--font);
+}
+h1 {
+  text-align: center;
+  font-size: 50px;
+}
+h2 {
+  text-align: center;
+  font-size: 30px;
+}
+
+#p_readme  {
+  text-align: left;
+  font-size: 22px;
+}
+#p_description {
+  text-align: center;
+  font-size: 26px;
 }
 a {
   padding: var(--space);
@@ -50,8 +70,13 @@ main {
   margin: 0 auto calc(var(--space) * 4) auto;
 }
 footer {
+  border: var(--line2);
   position: fixed;
   bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgb(172, 29, 29);
+  border-color: black;
   text-align: center;
 }
 /* ====== Articles Grid Layout ====
