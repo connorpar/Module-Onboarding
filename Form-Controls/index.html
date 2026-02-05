@@ -9,7 +9,7 @@
   </head>
   <body>
     <header>
-      <h1>Product Pick</h1>
+      <h1>T-Shirt Order</h1>
     </header>
     <main>
       <form>
@@ -17,11 +17,62 @@
         <!-- 
           try writing out the requirements first as comments
         this will also help you fill in your PR message later-->
+       <!-- 
+       1. Customer's Name - validate by making sure 
+       they've entered at least 2 characters
+       2. Customer's Email - needs "@.com"
+       3. colours: White, Black and Grey - use radio buttons
+       so that only one option can be selected
+       4. 6 Sizes - drop down menu 
+       -->
+       <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" required pattern=".{2,}" title="Please enter at least two characters" placeholder="Enter Name"/>
+       </div>
+       <div>
+        <label for="email">Email Address:</label>
+        <input id="email" type="email" required placeholder="@.com">
+       </div> 
+       <div>
+        <h2>Choose T-shirt Colour</h2>
+        <fieldset>
+          <legend>
+            T-Shirt Colours
+          </legend>
+          <div>
+            <input type="radio" name="Shirt_Colour" id="White" Value="White"/>
+            <label for="White">White</label>
+          </div>
+          <div>
+            <input type="radio" name="Shirt_Colour" id="Black" Value="Black"/>
+            <label for="Black">Black</label>
+          </div>
+          <div>
+            <input type="radio" name="Shirt_Colour" id="Grey" Value="Grey"/>
+            <label for="Grey">Grey</label>
+          </div>
+        </fieldset>
+        <br>
+        <div>
+          <label for="Sizes">Choose your size:</label>
+          <select name="size" id="size">
+            <option></option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+          </select>
+        </div>
+       </div>
+       <br>
+       <button type="submit">Submit</button>
       </form>
     </main>
     <footer>
       <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By Connor Parsons</h2>
     </footer>
   </body>
 </html>
