@@ -9,52 +9,47 @@
   </head>
   <body>
     <header>
-      <h1>T-Shirt Order</h1>
+      <h2>T-Shirt Order</h2>
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-       <!-- 
-       1. Customer's Name - validate by making sure 
-       they've entered at least 2 characters
-       2. Customer's Email - needs "@.com"
-       3. colours: White, Black and Grey - use radio buttons
-       so that only one option can be selected
-       4. 6 Sizes - drop down menu 
-       -->
        <div>
         <label for="name">Name:</label>
-        <input type="text" id="name" required pattern=".*\S.*" title="Please enter at least two characters" placeholder="Enter Name"/>
+        <input type="text" id="name" pattern=".*\S.*" title="Please fill out this field" placeholder="Enter Name"/>
+        <br><br>
        </div>
        <div>
         <label for="email">Email Address:</label>
         <input id="email" type="email" required placeholder="@.com">
-       </div> 
+        <br><br>
+       </div>
        <div>
-        <h2>Choose T-shirt Colour</h2>
+        <br><br>
         <fieldset>
           <legend>
-            T-Shirt Colours
+            <h3>Choose T-Shirt Colour</h3>
           </legend>
+          <br><br>
           <div>
             <input type="radio" name="Shirt_Colour" id="White" Value="White"/>
             <label for="White">White</label>
+            <br><br><br>
           </div>
           <div>
             <input type="radio" name="Shirt_Colour" id="Black" Value="Black"/>
             <label for="Black">Black</label>
+            <br><br><br>
           </div>
           <div>
             <input type="radio" name="Shirt_Colour" id="Grey" Value="Grey"/>
             <label for="Grey">Grey</label>
+            <br><br><br>
           </div>
         </fieldset>
         <br>
         <div>
-          <label for="size">Choose your size:</label>
+          <br><br>
+          <label for="size"><h3>Choose your size:</h3></label>
           <select name="size" id="size" required>
             <option></option>
             <option value="XS">XS</option>
@@ -66,12 +61,12 @@
           </select>
         </div>
        </div>
-       <br>
+       <br><br><br>
        <button type="submit">Submit</button>
       </form>
     </main>
     <footer>
-      <!-- change to your name-->
+      <br><br>
       <h2>By Connor Parsons</h2>
     </footer>
   </body>
