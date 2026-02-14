@@ -15,12 +15,12 @@
       <form>
        <div>
         <label for="name">Name:</label>
-        <input type="text" id="name" minlength="2" pattern=".*\S.*" title="Name must have at least 2 characters" placeholder="Enter Name">
+        <input type="text" id="name" name="Name" minlength="2" pattern=".*\S.*" title="Name must have at least 2 characters" placeholder="Enter Name">
         <br><br>
        </div>
        <div>
         <label for="email">Email Address:</label>
-        <input id="email" type="email" required placeholder="@.com">
+        <input id="email" type="email" name="Email Address" required placeholder="@.com">
         <br><br>
        </div>
        <div>
@@ -57,7 +57,7 @@
           <br>
           <h3>Choose your size:</h3>
           <label for="size">Size:</label>
-          <select id="size" required>
+          <select id="size" name="Size" required>
             <option value="">Select Size</option>
             <option value="XS">XS</option>
             <option value="S">S</option>
