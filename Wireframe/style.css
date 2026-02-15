@@ -70,11 +70,12 @@ main {
   margin: 0 auto calc(var(--space) * 4) auto;
 }
 footer {
-  border: var(--line2);
+  border: var(--line);
   position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1280px;
   background-color: rgb(172, 29, 29);
   border-color: black;
   text-align: center;
