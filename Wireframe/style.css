@@ -43,11 +43,11 @@ h2 {
   font-size: 2rem;
 }
 
-#p_readme  {
+article > p  {
   text-align: left;
   font-size: 1rem;
 }
-#p_description {
+header > p {
   text-align: center;
   font-size: 1rem;
 }
